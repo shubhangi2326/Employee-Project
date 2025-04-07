@@ -243,7 +243,7 @@ function AddEmployee() {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-xl mx-4 sm:mx-6 md:mx-8 bg-slate-700 px-8 py-6 my-20 rounded shadow space-y-4">
+    <div className="max-w-[40%] w-[50%] md:w-[100%] mx-4 sm:mx-6 md:mx-8 bg-slate-700 px-8 py-6 my-20 rounded shadow space-y-4">
       <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white">
         Add New Employee
       </div>
@@ -274,7 +274,6 @@ function AddEmployee() {
             value={employee.phone}
             onChange={handleChange}
             placeholder="Phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required
           />
         </div>
